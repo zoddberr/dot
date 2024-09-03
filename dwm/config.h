@@ -32,6 +32,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Anydesk",  NULL,	  NULL,	      0,	    1,		 -1 },
 };
 
 /* layout(s) */
@@ -69,6 +70,7 @@ static const char *upvol[] = {"/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SI
 static const char *downvol[] = {"/usr/bin/wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 static const char *mutevol[] = {"/usr/bin/wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 static const char *volnotify[] = {"/home/hanspink/sh/volume-notifier.sh", NULL};
+static const char *xp[] = { "xprop", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -97,7 +99,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
 
-	{ MODKEY,		        XK_Print,  spawn,           {.v = screenshot } },
+	{ MODKEY,		        XK_Print,  spawn,          {.v = screenshot } },
+	{ MODKEY,			XK_r	,  spawn,	   {.v = xp } },
 
 
 	{0,				XF86XK_AudioRaiseVolume, spawn, {.v = upvol}},

@@ -15,8 +15,11 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 alias sdn='sudo shutdown now'
-alias todo='$EDITOR ~/.todo'
 alias bins='cd ~/.local/bin'
+alias gs='git status'
+
+alias todo='$EDITOR ~/.todo'
+alias bm='$EDITOR ~/.bookmarks'
 alias z='zet'
 
 source ~/.git-prompt.sh
