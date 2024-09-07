@@ -1,8 +1,28 @@
-require("core.options")
 require("core.keymaps")
+require("core.options")
 require("core.colorscheme")
 require("core.lazy")
 require("core.commands")
+
+require("nvim-tree").setup({
+    filters = {
+        dotfiles = true,
+    },
+})
+
+require("luasnip.loaders.from_vscode").lazy_load()
+local ls = require("luasnip")
+
+vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump( 1) end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-J>", function() ls.jump(-1) end, {silent = true})
+
+vim.keymap.set({"i", "s"}, "<C-E>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, {silent = true})
+
 
 vim.keymap.set("n", "<c-P>", require('fzf-lua').files, { desc = "Fzf Files" })
 vim.keymap.set("n", "<c-G>", require('fzf-lua').live_grep_native, { desc = "Fzf Live Grep" })
@@ -13,7 +33,6 @@ vim.keymap.set({ "i" }, "<C-f>",
       winopts = { preview = { hidden = "nohidden" } }
     })
   end, { silent = true, desc = "Fuzzy complete file" })
-
 -- Default options:
 require("gruvbox").setup({
   terminal_colors = true, -- add neovim terminal colors

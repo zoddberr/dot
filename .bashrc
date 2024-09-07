@@ -20,7 +20,7 @@ alias gs='git status'
 
 alias todo='$EDITOR ~/.todo'
 alias bm='$EDITOR ~/.bookmarks'
-alias z='zet'
+alias z='cd ~/zet/data/ && zet'
 
 source ~/.git-prompt.sh
 
