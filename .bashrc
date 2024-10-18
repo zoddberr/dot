@@ -30,5 +30,6 @@ alias z='zet'
 
 alias wbr='brightnessctl set 45%'
 alias ibr='brightnessctl set 10%'
+alias vol='wpctl get-volume @DEFAULT_SINK@'
 
 source ~/.git-prompt.sh
