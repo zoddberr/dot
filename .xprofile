@@ -1,0 +1,2 @@
+xwallpaper --center ~/pix/wallpapers/mount-fuji.png
+xrandr --output HDMI2 --above eDP1
