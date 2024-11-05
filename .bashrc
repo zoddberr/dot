@@ -18,7 +18,9 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 export PATH=$PATH:~/.local/bin
 
-export HISTSIZE=0
+export HISTCONTROL=ignoreboth
+export HISTSIZE=5000
+export HISTFILESIZE=10000
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
