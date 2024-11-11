@@ -1,3 +1,5 @@
+set nocompatible
+
 set bg=dark
 set wildmenu
 set clipboard=unnamedplus
