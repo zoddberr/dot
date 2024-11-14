@@ -1,5 +1,6 @@
 set nocompatible
 
+color wildcharm
 set bg=dark
 set wildmenu
 set clipboard=unnamedplus
@@ -11,5 +12,7 @@ set autoindent
 
 set splitright
 set splitbelow
+
+set number
 
 syntax on
