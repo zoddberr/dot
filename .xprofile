@@ -1,2 +1,2 @@
-xwallpaper --center ~/pix/wallpapers/snowcabin.png
+xwallpaper --center ~/pix/wallpapers/lake-and-lights.png
 xrandr --output HDMI2 --above eDP1
