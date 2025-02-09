@@ -2,4 +2,3 @@ xwallpaper --center ~/pix/wallpapers/lake-and-lights.png
 xrandr --output HDMI2 --above eDP1
 
 /home/hanspink/sh/status &
-/home/hanspink/sh/dpi &
