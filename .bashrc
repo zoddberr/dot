@@ -16,6 +16,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
+export MPD_HOST=localhost
 export PATH=$PATH:~/.local/bin
 
 export HISTCONTROL=ignoreboth
@@ -26,6 +27,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 alias sdn='sudo shutdown now'
+alias sus='systemctl suspend'
 alias gs='git status'
 alias ff='fastfetch'
 alias vi='vim'
