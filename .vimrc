@@ -16,3 +16,6 @@ set splitbelow
 set number
 
 syntax on
+
+" colors
+hi Todo ctermfg=137
