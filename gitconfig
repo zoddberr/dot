@@ -1,0 +1,9 @@
+[alias]
+	st = status -sb
+	ll = log --oneline
+[init]
+	defaultBranch = master
+
+# include system local configuration
+[include]
+	path = ~/.gitconfig.local

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# cd into script directory
+BASEDIR=$(dirname $0)
+cd $BASEDIR
+
+ln -sf -v ${PWD}/bashrc ~/.bashrc
+ln -sf -v ${PWD}/vimrc ~/.vimrc
+ln -sf -v ${PWD}/gitconfig ~/.gitconfig
+ln -sf -v ${PWD}/xinitrc ~/.xinitrc
+
+mkdir -p -v ~/.config/ncmpcpp
+ln -sf -v ${PWD}/.config/ncmpcpp/config ~/.config/ncmpcpp/config
+ln -sf -v ${PWD}/.config/ncmpcpp/bindings ~/.config/ncmpcpp/bindings
+
+mkdir -p -v ~/.config/newsboat
+ln -sf -v ${PWD}/.config/newsboat/config ~/.config/newsboat/config
+
+mkdir -p -v ~/.config/zathura
+ln -sf -v ${PWD}/.config/zathura/zathurarc ~/.config/zathura/zathurarc
+
+mkdir -p -v ~/.config/tmux
+ln -sf -v ${PWD}/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf

@@ -1,0 +1,7 @@
+use-proxy yes
+proxy-type socks5
+proxy 0.0.0.0:1080
+
+reload-time 30
+
+macro v set browser "setsid -f mpv" ; open-in-browser ; set browse
