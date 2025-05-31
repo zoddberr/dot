@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# vi mode
+set -o vi
+
 export EDITOR=vim
 export BROWSER=firefox
 export TERMINAL=st

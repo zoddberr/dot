@@ -5,3 +5,4 @@
 	* mpv - video player
 	* zathura - pdf reader
 	* newsboat - rss reader
+	* vim - text editor
