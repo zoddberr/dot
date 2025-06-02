@@ -1,7 +1,10 @@
+# proxy setup
 use-proxy yes
 proxy-type socks5
 proxy 0.0.0.0:1080
 
-reload-time 30
-
-macro v set browser "setsid -f mpv" ; open-in-browser ; set browse
+# vim bindings
+bind k everywhere up
+bind j everywhere down
+bind l feedlist,articlelist open
+bind h feedlist,articlelist,article quit
