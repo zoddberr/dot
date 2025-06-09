@@ -1,6 +1,5 @@
 set nocompatible
 
-"color wildcharm
 set bg=dark
 set notermguicolors
 
@@ -19,6 +18,5 @@ set number
 
 syntax on
 
-
-" colors
-"hi Todo ctermfg=137
+command! FileNameCP let @+ = expand("%:t") | echo "File name copied"
+command! SpellWords set spell spelllang=en_us
