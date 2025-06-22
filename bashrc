@@ -5,6 +5,16 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "(%s)")'; PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\] \[\e[92m\]\W\[\e[0m\]]\[\e[96;1m\]${PS1_CMD1}\[\e[0m\]\$ '
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_STATESEPARATOR=""
+
+function duo {
+	local location="$HOME/edu/materials/german-screenshots/"
+	rclone move gdrive:duo-dump $location && echo "Completed. All good."
+}
+
 # vi mode
 set -o vi
 
@@ -46,6 +56,7 @@ alias todo='$EDITOR $XDG_DATA_HOME/todo'
 alias z='zet'
 alias n='nnn -c'
 
-alias yt-dlp="yt-dlp --proxy socks5://0.0.0.0:1080"
-
 alias vol='wpctl get-volume @DEFAULT_SINK@'
+alias lb="xrandr --output HDMI2 --brightness 0.7"
+
+. ~/.git-prompt.sh   # dot path/to/this-file
