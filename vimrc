@@ -18,5 +18,6 @@ set number
 
 syntax on
 
-command! FileNameCP let @+ = expand("%:t") | echo "File name copied"
+command! ZFileName let @+ = expand("%:t") | echo "File name copied"
+
 command! SpellWords set spell spelllang=en_us
