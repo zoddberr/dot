@@ -1,4 +1,4 @@
-$HOME/sh/status &
+dwmblocks &
 $HOME/sh/dpi
 
 xrandr --output HDMI2 --above eDP1

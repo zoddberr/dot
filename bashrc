@@ -56,7 +56,6 @@ alias todo='$EDITOR $XDG_DATA_HOME/todo'
 alias z='zet'
 alias n='nnn -c'
 
-alias vol='wpctl get-volume @DEFAULT_SINK@'
 alias lb="xrandr --output HDMI2 --brightness 0.7"
 
 . ~/.git-prompt.sh   # dot path/to/this-file
