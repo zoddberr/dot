@@ -159,7 +159,7 @@ message_delay_time = 1
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-#execute_on_song_change = ""
+execute_on_song_change = "kill -54 $(pidof dwmblocks)"
 #
 ##
 ## Note: Custom command that will be executed each time player state
@@ -167,7 +167,7 @@ message_delay_time = 1
 ## state (either unknown, play, pause, or stop) for its duration.
 ##
 #
-#execute_on_player_state_change = ""
+execute_on_player_state_change = "kill -54 $(pidof dwmblocks)"
 #
 #playlist_show_mpd_host = no
 #
