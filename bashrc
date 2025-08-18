@@ -10,11 +10,6 @@ PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "(%s)")'; PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_STATESEPARATOR=""
 
-function duo {
-	local location="$HOME/edu/materials/german-screenshots/"
-	rclone move gdrive:duo-dump $location && echo "Completed. All good."
-}
-
 # vi mode
 set -o vi
 
@@ -46,6 +41,8 @@ export AWT_TOOLKIT=MToolkit
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias cal='cal -m'
+alias n='nnn -c'
 
 alias sdn='sudo shutdown now'
 alias sus='systemctl suspend'
@@ -54,6 +51,5 @@ alias ff='fastfetch'
 alias vi='vim'
 alias todo='$EDITOR $XDG_DATA_HOME/todo'
 alias z='zet'
-alias n='nnn -c'
 
 . ~/.git-prompt.sh   # dot path/to/this-file
