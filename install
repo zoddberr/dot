@@ -18,6 +18,3 @@ ln -sf -v ${PWD}/.config/newsboat/config ~/.config/newsboat/config
 
 mkdir -p -v ~/.config/zathura
 ln -sf -v ${PWD}/.config/zathura/zathurarc ~/.config/zathura/zathurarc
-
-mkdir -p -v ~/.config/tmux
-ln -sf -v ${PWD}/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf
